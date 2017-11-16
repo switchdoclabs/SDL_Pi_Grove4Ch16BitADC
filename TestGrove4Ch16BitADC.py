@@ -8,9 +8,9 @@
 
 
 import time, signal, sys
-sys.path.append('./Adafruit_ADS1x15')
+sys.path.append('./SDL_Adafruit_ADS1x15')
 
-from Adafruit_ADS1x15 import ADS1x15
+import SDL_Adafruit_ADS1x15 
 
 def signal_handler(signal, frame):
         print 'You pressed Ctrl+C!'
@@ -39,7 +39,7 @@ sps = 250  # 250 samples per second
 # sps = 860  # 860 samples per second
 
 # Initialise the ADC using the default mode (use default I2C address)
-adc = ADS1x15(ic=ADS1115)
+adc = SDL_Adafruit_ADS1x15.ADS1x15(ic=ADS1115)
 while (1):
 
 	# Read channels  in single-ended mode using the settings above
