@@ -47,16 +47,16 @@ while (1):
 	print"--------------------"
 	voltsCh0 = adc.readADCSingleEnded(0, gain, sps) / 1000
 	rawCh0 = adc.readRaw(0, gain, sps) 
-	print "Channel 0 =%.6fV raw=0x%4X" % (voltsCh0, rawCh0)
+	print "Channel 0 =%.6fV raw=0x%4X dec=%d" % (voltsCh0, rawCh0, rawCh0)
 	voltsCh1 = adc.readADCSingleEnded(1, gain, sps) / 1000
 	rawCh1 = adc.readRaw(1, gain, sps) 
-	print "Channel 1 =%.6fV raw=0x%4X" % (voltsCh1, rawCh1)
+	print "Channel 1 =%.6fV raw=0x%4X dec=%d" % (voltsCh1, rawCh1, rawCh1)
 	voltsCh2 = adc.readADCSingleEnded(2, gain, sps) / 1000
 	rawCh2 = adc.readRaw(2, gain, sps) 
-	print "Channel 2 =%.6fV raw=0x%4X" % (voltsCh2, rawCh2)
+	print "Channel 2 =%.6fV raw=0x%4X dec=%d" % (voltsCh2, rawCh2, rawCh2)
 	voltsCh3 = adc.readADCSingleEnded(3, gain, sps) / 1000
 	rawCh3 = adc.readRaw(3, gain, sps) 
-	print "Channel 3 =%.6fV raw=0x%4X" % (voltsCh3, rawCh3)
+	print "Channel 3 =%.6fV raw=0x%4X dec=%d" % (voltsCh3, rawCh3, rawCh3)
 	print"--------------------"
 
 	time.sleep(0.5)
