@@ -24,4 +24,4 @@ volts3 = adc.readADCSingleEnded(3, 4096, 250)/1000.0
 voltsdiff = adc.readADCDifferential23(4096, 250)/1000.0
 
 # Display the two different reading for comparison purposes
-print "%.8f %.8f %.8f %.8f" % (volts2, volts3, volts3-volts2, -voltsdiff)
+print ("%.8f %.8f %.8f %.8f" % (volts2, volts3, volts3-volts2, -voltsdiff))

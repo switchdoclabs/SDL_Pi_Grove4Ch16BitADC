@@ -2,9 +2,9 @@
 
 Grove 4Ch/16BitADC Board Drivers
 
-SwitchDoc Labs, May 2016 Version 1.0
+SwitchDoc Labs, December 2018 Version 1.2
 
-Raspberry Pi Pure Python Software
+Raspberry Pi Pure Python Software for Python 2 and Python 3
 
 The Grove 4Ch/16BitADC Board contains Grove Connectors and an ADS1115 ADC.
 
